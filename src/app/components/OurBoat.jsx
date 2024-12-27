@@ -1,17 +1,18 @@
 const features = [
-  { name: "Origin", description: "Designed by Good Goods, Inc." },
+  { name: "Name", description: "Gypsy" },
   {
-    name: "Material",
-    description:
-      "Solid walnut base with rare earth magnets and powder coated steel card cover",
+    name: "Beam",
+    description: "58,14 cm",
   },
-  { name: "Dimensions", description: '6.25" x 3.55" x 1.15"' },
-  { name: "Finish", description: "Hand sanded and finished with natural oil" },
-  { name: "Includes", description: "Wood card tray and 3 refill packs" },
+  { name: "LOA", description: "99,9 cm" },
+  { name: "Height", description: "29 cm" },
+  { name: "Draft", description: "17,8 cm" },
   {
-    name: "Considerations",
+    name: "Displacement",
+    description: "33,56 kg",
+    name: "Features",
     description:
-      "Made from natural materials. Grain and color vary with each item.",
+      "This boat's system operates autonomously, utilizing lidar to accurately detect the distance of obstacles and a camera system to effectively classify object types, such as images. The boat also equipped with 2 GPS, featuring GPS for seamless communication with land and an additional GPS to significantly enhance the accuracy of its coordinates.",
   },
 ];
 
@@ -34,7 +35,7 @@ export default function OurBoat() {
             {features.map((feature) => (
               <div key={feature.name} className="border-t border-gray-200 pt-4">
                 <dt className="font-medium text-white">{feature.name}</dt>
-                <dd className="mt-2 text-sm text-white">
+                <dd className="mt-2 text-sm text-gray-300 text-opacity-75">
                   {feature.description}
                 </dd>
               </div>

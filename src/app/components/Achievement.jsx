@@ -10,14 +10,14 @@ export default function Achievement() {
         <div className="h-32 rounded-lg bg-gray-200">
           <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg dark:shadow-gray-700/25">
             <img
-              alt=""
+              alt="Furniture positioning for positivity"
               src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
               className="h-56 w-full object-cover"
             />
 
             <div className="bg-white p-4 sm:p-6 dark:bg-gray-900">
               <time
-                datetime="2022-10-10"
+                dateTime="2022-10-10"
                 className="block text-xs text-gray-500 dark:text-gray-400"
               >
                 10th Oct 2022
