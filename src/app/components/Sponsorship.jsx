@@ -13,10 +13,10 @@ export default function Sponsorship() {
             </h2>
 
             <p className="hidden text-gray-500 md:mt-4 md:block dark:text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
-              egestas tempus tellus etiam sed. Quam a scelerisque amet
-              ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
-              quisque ut interdum tincidunt duis.
+              Gain global exposure, industry recognition, and showcase your
+              commitment to education and technology. Support the Barunastra ITS
+              RoboBoat Team and inspire the future of autonomous maritime
+              excellence. Partner with us today!
             </p>
 
             <Link
