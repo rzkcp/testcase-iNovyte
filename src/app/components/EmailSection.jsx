@@ -1,10 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import GithubIcon from "../../../public/github-icon.svg";
-import LinkedinIcon from "../../../public/linkedin-icon.svg";
-import InstagramIcon from "../../../public/instagram-icon.svg";
-import Link from "next/link";
-import Image from "next/image";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -47,28 +42,27 @@ const EmailSection = () => {
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900 to-transparent rounded-full h-80 w-80 z-50 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="">
-        <h5 className="text-xl font-bold text-white my-2">
-          Let&apos;s Connect
-        </h5>
+        <h5 className="text-xl font-bold text-white my-2">Contact Us</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. If you want to find me on social media, click this image below.
+          Instagram : @barunastra_its
         </p>
-        <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/rzkcp">
-            <Image src={GithubIcon} alt="Github Icon" />
-          </Link>
-          <Link href="https://www.linkedin.com/in/ahmad-syauqi-reza-6432b931a/">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
-          </Link>
-          <Link
-            href="https://www.instagram.com/syauqireza"
-            className="mt-1 ml-1"
-          >
-            <Image src={InstagramIcon} alt="Instagram Icon" />
-          </Link>
-        </div>
+        <p className="text-[#ADB7BE] mb-4 max-w-md">
+          {" "}
+          Youtube : Barunastra ITS
+        </p>
+        <p className="text-[#ADB7BE] mb-4 max-w-md">
+          {" "}
+          TikTok : @barunastra.its
+        </p>
+        <p className="text-[#ADB7BE] mb-4 max-w-md">
+          {" "}
+          LinkedIn : Barunastra ITS Roboboat Team
+        </p>
+        <p className="text-[#ADB7BE] mb-4 max-w-md">
+          {" "}
+          Email : Email : barunastra.its@gmail.com
+        </p>
       </div>
       <div>
         {emailSubmitted ? (

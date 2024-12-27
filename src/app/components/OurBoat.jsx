@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const features = [
   { name: "Name", description: "Gypsy" },
   {
@@ -18,50 +20,40 @@ const features = [
 
 export default function OurBoat() {
   return (
-    <div className="bg-black">
+    <div className="bg-black" id="ourboat">
       <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-24 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Our Boat
           </h2>
           <p className="mt-4 text-white">
-            The walnut wood card tray is precision milled to perfectly fit a
-            stack of Focus cards. The powder coated steel divider separates
-            active cards from new ones, or can be used to archive important task
-            lists.
+            The Barunastra Autonomous Surface Vehicle (ASV) is a
+            high-performance, cutting-edge boat designed for autonomous maritime
+            competitions. Equipped with advanced sensors, GPS, and AI, it
+            navigates independently in challenging water environments. Built for
+            precision and efficiency, the ASV uses eco-friendly materials and
+            technology, highlighting the potential of autonomous systems in the
+            maritime industry.
           </p>
 
           <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
             {features.map((feature) => (
               <div key={feature.name} className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-white">{feature.name}</dt>
-                <dd className="mt-2 text-sm text-gray-300 text-opacity-75">
+                <dt className="font-bold text-white">{feature.name}</dt>
+                <dd className="mt-2 text-sm text-gray-300 text-opacity-50">
                   {feature.description}
                 </dd>
               </div>
             ))}
           </dl>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-          <img
-            alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-            src="https://tailwindui.com/plus/img/ecommerce-images/product-feature-03-detail-01.jpg"
-            className="rounded-lg bg-gray-100"
-          />
-          <img
-            alt="Top down view of walnut card tray with embedded magnets and card groove."
-            src="https://tailwindui.com/plus/img/ecommerce-images/product-feature-03-detail-02.jpg"
-            className="rounded-lg bg-gray-100"
-          />
-          <img
-            alt="Side of walnut card tray with card groove and recessed card area."
-            src="https://tailwindui.com/plus/img/ecommerce-images/product-feature-03-detail-03.jpg"
-            className="rounded-lg bg-gray-100"
-          />
-          <img
-            alt="Walnut card tray filled with cards and card angled in dedicated groove."
-            src="https://tailwindui.com/plus/img/ecommerce-images/product-feature-03-detail-04.jpg"
-            className="rounded-lg bg-gray-100"
+        <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8 rounded-full bg-[#181818] w-[500px] h-[500px] lg:w-[600px] lg:h-[600px] relative border-white">
+          <Image
+            src="/images/kapalbaru.png"
+            alt="boat"
+            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            width={1000}
+            height={1000}
           />
         </div>
       </div>
