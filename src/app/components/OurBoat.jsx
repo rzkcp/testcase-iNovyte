@@ -47,7 +47,7 @@ export default function OurBoat() {
             ))}
           </dl>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8 rounded-full bg-[#181818] w-[500px] h-[500px] lg:w-[600px] lg:h-[600px] relative border-white">
+        <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8 rounded-full bg-[#181818] w-[200px] h-[200px] lg:w-[600px] lg:h-[600px] relative border-white">
           <Image
             src="/images/kapalbaru.png"
             alt="boat"
