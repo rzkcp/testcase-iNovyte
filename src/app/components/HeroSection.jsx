@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16">
+    <section className="lg:py-16" id="beranda">
       <div className="grid grid-cols-1 sm:grid-cols-12 py-5">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -23,8 +23,8 @@ const HeroSection = () => {
           </p>
           <div>
             <Link
-              href="/#about"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-secondary text-white hover:bg-white active:bg-white hover:font-bold hover:bg-secondary"
+              href="/#produk"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-secondary text-white hover:bg-white active:bg-white hover:font-bold hover:bg-thirdary"
             >
               Pesan Sekarang
             </Link>
@@ -36,14 +36,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div
-            className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative border-white"
-            style={{
-              backgroundImage: "url('/images/boatt.png')",
-
-              backgroundPosition: "center",
-            }}
-          >
+          <div className="rounded-full bg-thirdary w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative border-white">
             <Image
               src="/images/hero.png"
               alt="logo"

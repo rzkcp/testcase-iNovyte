@@ -18,6 +18,7 @@ module.exports = {
     colors: {
       primary: "#FAF4EF",
       secondary: "#6F4E37",
+      thirdary: "#DDB892",
       tc: "#5B5B5B",
     },
   },
